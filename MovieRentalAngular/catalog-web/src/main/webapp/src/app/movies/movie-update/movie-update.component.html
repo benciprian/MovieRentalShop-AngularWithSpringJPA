@@ -1,0 +1,10 @@
+<h2>Update Movie</h2>
+
+<form *ngIf="movie" (ngSubmit)="saveMovie()">
+  <label>Title: <input [(ngModel)]="movie.title" name="title"></label><br>
+  <label>Year: <input [(ngModel)]="movie.year" name="year"></label><br>
+  <label>Genre: <input [(ngModel)]="movie.genre" name="genre"></label><br>
+  <label>Rental Price: <input [(ngModel)]="movie.rentalPrice" name="rentalPrice"></label><br>
+  <button type="submit">Save Changes</button>
+  <button (click)="goBack()">Back</button>
+</form>

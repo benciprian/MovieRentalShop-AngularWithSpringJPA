@@ -1,0 +1,11 @@
+
+<h2>Add new client</h2>
+
+<label>FirstName: <input #firstNameInput></label><br>
+<label>LastName: <input #lastNameInput></label><br>
+<label>Email: <input #emailInput></label><br>
+<label>PhoneNumber: <input #phoneNumberInput></label><br>
+<label>City: <input #cityInput></label><br>
+
+<button (click)="saveClient(firstNameInput.value, lastNameInput.value, emailInput.value, phoneNumberInput.value, cityInput.value)">Save</button>
+

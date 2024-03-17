@@ -1,0 +1,10 @@
+
+<h2>Add new movie</h2>
+
+<label>Title: <input #titleInput></label><br>
+<label>Year: <input #yearInput></label><br>
+<label>Genre: <input #genreInput></label><br>
+<label>RentalPrice: <input #rentalPriceInput></label><br>
+
+
+<button (click)="saveMovie(titleInput.value, yearInput.value, genreInput.value, rentalPriceInput.value)">Save</button>

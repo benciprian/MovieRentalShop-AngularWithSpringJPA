@@ -1,0 +1,10 @@
+
+<h2>Print all Clients</h2>
+<ol>
+  <li *ngFor="let client of clients">
+    {{client.firstName}} {{client.lastName}} - {{client.email}} - {{client.phoneNumber}} - {{client.city}}
+    <button (click)="deleteClient(client)">Delete</button>
+    <button (click)="goToUpdateClient(client.id)">Update</button>
+  </li>
+</ol>
+

@@ -1,0 +1,10 @@
+<h2>Print all Movies</h2>
+<ol>
+  <li *ngFor="let movie of movies">
+    {{movie.title}} - {{movie.year}} - {{movie.genre}} - {{movie.rentalPrice}}
+    <button (click)="deleteMovie(movie)">Delete</button>
+    <button (click)="goToUpdateMovie(movie.id)">Update</button>
+  </li>
+</ol>
+
+

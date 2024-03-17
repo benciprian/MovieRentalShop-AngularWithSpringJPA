@@ -1,0 +1,15 @@
+<h2>Update Client</h2>
+
+<form *ngIf="client" (ngSubmit)="saveClient()">
+  <label>First Name: <input [(ngModel)]="client.firstName" name="firstName"></label><br>
+  <label>Last Name: <input [(ngModel)]="client.lastName" name="lastName"></label><br>
+  <label>Email: <input [(ngModel)]="client.email" name="email"></label><br>
+  <label>Phone Number: <input [(ngModel)]="client.phoneNumber" name="phoneNumber"></label><br>
+  <label>City: <input [(ngModel)]="client.city" name="city"></label><br>
+  <button type="submit">Save Changes</button>
+  <button (click)="goBack()">Back</button>
+</form>
+
+
+
+
